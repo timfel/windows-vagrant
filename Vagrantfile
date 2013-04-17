@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant::Config.run do |config|
-  config.vm.box = "win7-ultimate"
+  config.vm.box = "win7-enterprise"
   config.vm.guest = :windows
   config.vm.forward_port 3389, 3390, :name => "rdp", :auto => true
   config.vm.forward_port 5985, 5985, :name => "winrm", :auto => true

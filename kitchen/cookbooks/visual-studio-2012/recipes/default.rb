@@ -45,7 +45,7 @@ unless
   #\\server1\IDEinstall\vs_ultimate.exe /adminfile \\server1\ IDEinstall\AdminDeployment.xml /quiet /norestart
   execute "#{node.vs2012.temp_dir}\\#{node.vs2012.installer}" do
     action :run
-    command "#{node.vs2012.temp_dir}\\#{node.vs2012.installer} /adminfile AdminDeployment.xml /quiet /norestart /ProductKey #{node.vs2012.product_key} /L c:\\temp\\vs2012-install.log"
+    command "#{node.vs2012.temp_dir}\\#{node.vs2012.installer} /adminfile AdminDeployment.xml /quiet /norestart /L c:\\temp\\vs2012-install.log"
   end
 #c:\temp\vs2012\vs_professional.exe /adminfile AdminDeployment.xml /quiet /norestart /ProductKey 4D9749QX429Y43GYJ7JGJDYBP
 end
